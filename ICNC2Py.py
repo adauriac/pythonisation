@@ -478,6 +478,30 @@ For this purpose, you can make a bufferized write with a counter for some partic
         self.connected = 0
         return self.ICNC2Lib.ICNC_Disconnect()
 
+    def ListMethods(self):
+        """
+        list implemented methods
+        """
+        print("Connect(self, Number=0)")# :
+        print("ErrorReset(self, ErrorBits)")# :
+        print("GetInput(self, InNo)")# :
+        print("GetOutputAll(self)")# :
+        print("GetBoardStatus(self, StatusType)")# : # output param:      *Status
+        print("GetBufferStatus()")# :
+        print("MoveSpeedAbsBuf(self,Axis,Speed,MoveX,MoveY,MoveZ,MoveA,MoveB)")# :
+        print("MoveProfileAbsBuf(self,Axis,Speed,PositionX,PositionY,PositionZ,PositionA,PositionB)")# :#WORD* BufferRequired = NULL)")# ;
+        print("MachineHome(self,Axes,MaxStrokeX=0xFFFFFFFF,MaxStrokeY=0xFFFFFFFF,MaxStrokeZ=0xFFFFFFFF,MaxStrokeA=0xFFFFFFFF,MaxStrokeB=0xFFFFFFFF)")# :
+        print("SlowStopAllAndClear(self)")# :
+        print("SetOutput(self,OutputNo, OutputState)")# :
+        print("SetOutputBuf(self,OutputNo,OutputValue)")# :
+        print("SetSimulationMode(self,SimulationModeVal)")# :
+        print("WriteParameter(self,ParameterID,ParameterValue,WaitCompletion=1,TimeOut=1000)")# :
+        print("WriteUserMem(self,MemoryNumber,MemoryValue)")# :
+        print("WaitBuf(self,TimeToWait)")# :
+        print("GetDLLVersion(self)")# :
+        print("Disconnect(self)")# :
+        print("SetUserApplicationID(self, lUserApplicationID)")# :
+    
     def SetUserApplicationID(self, lUserApplicationID):
         """
         Definition de l'ID application
@@ -511,3 +535,5 @@ if __name__ == "__main__":
         print("       i.WriteUserMem(6,9)")
         print("       i.WaitBuf(60)")
         print("       i.MoveSpeedAbsBuf(Axis,Speed,MoveX,MoveY,MoveZ,MoveA,MoveB)")
+        print("       i.ListMethods()")
+        
