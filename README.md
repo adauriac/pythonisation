@@ -3,4 +3,4 @@
     ************************************************************************** 
 
 1) To modify dll go to directory dllisation/ and read the README.md
-2) here one can improve the python module end play wit it
+2) here one can improve the python module and play with it

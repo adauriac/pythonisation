@@ -12,3 +12,8 @@ Pour modifier ce projet il faut utiliser VisualStudio sur
 le visual studio utilise est
 Microsoft Visual Studio Community 2022 (64-bit) - Current
 Version 17.9.2
+
+Il peut etre malin de faire
+rm dllisation/dllisation/x64/Release/ICNC2_VS.dl 
+rm dllisation/dllisation/x64/Release/ConsoleApplication.exe
+pour vraiment refaire le projet
